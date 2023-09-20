@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Só nos computer</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+
+    section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        clip-path: circle(40% at bottom right);
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header.logo {
+        position: relative;
+        max-width: 150px;
+        right: 60px;
+    }
+
+    header .navegation ul {
+        position: relative;
+        display: flex;
+    }
+
+    header .navegation li {
+        list-style: none;
+    }
+
+    header .navegation li a {
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 25px;
+        margin-left: 70px;
+
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container text {
+        position: relative;
+        max-width: 600px;
+        margin-right: 20px;
+    }
+
+    .container.text h2 {
+        color: white;
+        font-size: 3em;
+        margin-bottom: 10px;
+        line-height: 700;
+    }
+
+    .container .text h2 span {
+        font-size: 3.5em;
+        color: red;
+    }
+
+    .container .text p {
+        color: white;
+    }
+
+    .container.text a {
+        display: inline-block;
+        margin-top: 50px;
+        padding: 10px 25px;
+        background: red;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 1px;
+        border-radius: 40px;
+
+    }
+
+    .container .text a:hover {
+        transform: translateY(-70px);
+    }
+
+    .social-media {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .social-media li {
+        list-style: none;
+
+    }
+
+    .social-media li a {
+        display: inline-block;
+        width: 50px;
+        height: 5opx;
+        border-radius: 50%;
+        background: black;
+        margin-left: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: o.5s ease-in-out;
+    }
+
+    #coke{
+        width: 600px;
+        position: absolute;
+        top: -30%;
+        left: 60%;
+        transform: translate(-50%,-50%);
+        transform: rotate(-100deg);
+    }
+</style>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="Coca-Cola_logo_white.png" alt="logo"></a>
+            <nav class="navegation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="text">
+                <h2><br><span>Isso é coca cola</span></h2>
+                <p>Posso não fazer muito bem ao seu corpo, mas sou ótimo para o seu paladar</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <img id="coke" src="coquinha.png" alt="">
+        </div>
+
+    </section>
+</body>
+
+</html>
